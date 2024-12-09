@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Submit your best photos to our Online Photo Club.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Photos - Online Photo Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/js.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Submit Your Photos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="submit.html">Submit Photos</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="voting.html">Vote</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <p>Submitting your photos to the Online Photo Club is easy and straightforward. Fill out the form below with your name, email address, and upload your photo file. Accepted formats are JPG, PNG, and GIF. Please ensure your file size does not exceed 1MB.</p>
+        <p>By submitting your photos, you agree to our rules and guidelines. Your submission will be reviewed before it is displayed in our gallery or entered into voting rounds. We look forward to seeing your amazing work and celebrating your creativity!</p>
+        
+        <form action="https://getform.io/f/ayvvmvob" method="post" enctype="multipart/form-data">
+            
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="category">Select Category:</label>
+            <select id="category" name="category" required>
+                <option value="">-- Choose a Category --</option>
+                <option value="nature">Nature</option>
+                <option value="wildlife">Wildlife</option>
+                <option value="still_life">Still Life</option>
+            </select>
+
+            <label for="photo">Upload Photo:</label>
+            <label for="photo" class="file-button">Choose Photo</label>
+            <input type="file" id="photo" name="photo" accept=".jpg, .png, .gif" required hidden>
+            <span id="file-chosen" style="display: none;">No file chosen</span>
+            <div id="preview-container">
+            <img id="preview-image" src="#" alt="Image Preview" style="display: none; max-width: 100%; margin-top: 10px;">
+            </div>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" cols="50" maxlength="100"></textarea>
+            <p id="charCount">100 characters remaining</p>
+
+            <button type="submit">Send</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <div id="footer-navigation"></div>
+        <p>Contact us at: <a href="mailto:haques186@macomb.edu">Haques186@macomb.edu</a></p>
+        <p><a href="sitemap.xml">Sitemap</a> | <a href="../home.htm">Homepage</a></p>
+    </footer>
+
+    <script>
+        window['CboxReady'] = function (Cbox) {
+            Cbox('button', '3-3542678-YiUYeT');
+        }
+    </script>
+    <script src="https://static.cbox.ws/embed/2.js" async></script>
+    
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Vote for your favorite photos in our Online Photo Club.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote - Online Photo Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/js.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Vote for Your Favorite Photos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="submit.html">Submit Photos</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="voting.html">Vote</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <p>Participate in our monthly voting contest and help us choose the best photograph! Your vote matters and provides valuable feedback to our talented photographers. Browse the images below and select the one that captures your heart and imagination.</p>
+        <p>We aim to create a fair and transparent voting process. Each photo includes a brief description and a voting button. Once you've made your choice, simply click the button below the photo to cast your vote. We thank you for your participation and support!</p>
+       
+        <form action="https://getform.io/f/ayvvmvob" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="category" value="nature">
+            
+            <h2>Nature</h2>
+            <div class="voting-gallery">
+                <div>
+                    <label for="nature1">
+                        <img src="images/nature4.jpg" alt="Road Forest photo" title="Road Forest">
+                    </label><br>
+                    <input type="radio" id="nature1" name="nature" value="1">
+                </div>
+                <div>
+                    <label for="nature2">
+                        <img src="images/nature5.jpg" alt="Water Lake photo" title="Water Lake"><br>
+                    </label>
+                    <input type="radio" id="nature2" name="nature" value="2">
+                </div>
+            </div>
+
+            <h2>Wildlife</h2>
+            <div class="voting-gallery">
+                <div>
+                    <label for="wildlife1">
+                        <img src="images/wildlife4.png" alt="Bear photo" title="Bear">
+                    </label><br>
+                    <input type="radio" id="wildlife1" name="wildlife" value="1">
+                </div>
+                <div>
+                    <label for="wildlife2">
+                        <img src="images/wildlife5.jpg" alt="Cheetah photo" title="Cheetah">
+                    </label><br>
+                    <input type="radio" id="wildlife2" name="wildlife" value="2">
+                </div>
+            </div>
+
+            <h2>Still Life</h2>
+            <div class="voting-gallery">
+                <div>
+                    <label for="stilllife1">
+                        <img src="images/still4.jpg" alt="Fruits photo" title="Fruits">
+                    </label><br>
+                    <input type="radio" id="stilllife1" name="stilllife" value="1">
+                </div>
+                <div>
+                    <label for="stilllife2">
+                        <img src="images/still5.jpg" alt="Hydrangea Blossom photo" title="Hydrangea Blossom">
+                    </label><br>
+                    <input type="radio" id="stilllife2" name="stilllife" value="2">
+                </div>
+            </div>
+
+            <button type="submit" disabled id="submit-btn">Vote</button>
+    
+        </form>
+        
+    </main>
+
+    <footer>
+        <div id="footer-navigation"></div>
+        <p>Contact us at: <a href="mailto:haques186@macomb.edu">Haques186@macomb.edu</a></p>
+        <p><a href="sitemap.xml">Sitemap</a> | <a href="../home.htm">Homepage</a></p>
+    </footer>
+
+    <script>
+        window['CboxReady'] = function (Cbox) {
+            Cbox('button', '3-3542678-YiUYeT');
+        }
+    </script>
+    <script src="https://static.cbox.ws/embed/2.js" async></script>
+
+</body>
+</html>
